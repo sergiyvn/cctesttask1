@@ -1,2 +1,203 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext');
 @import "~bootstrap/dist/css/bootstrap.css";
+
+@charset "utf-8";
+
+/*
+[01] Common Style
+[02] BUTTON
+[03] HEADER
+[04] HERO
+[05] CENTRAL BLOCK
+*/
+
+/*=======================================================================
+[01] Common Style
+=========================================================================*/
+*{
+  outline: none!important;
+  transition: all ease-in-out .3s;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+
+  width: 100%;
+  margin-bottom: 50px;
+  background:#fff;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  color: #474747;
+  line-height:1.5;
+}
+::-webkit-selection {
+  background: #101010;
+  color:#eee;
+}
+::-moz-selection {
+  background: #101010;
+  color:#eee;
+}
+::selection {
+  background: #101010;
+  color:#eee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 30px 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:focus,
+a:hover{
+  color: #555;
+  text-decoration: none;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+main {
+  margin-top: 70px;
+}
+section {
+  padding: 20px 0;
+}
+/*=======================================================================
+[02] BUTTON
+=========================================================================*/
+.btn-orange {
+  border-radius: 0;
+  color: #fff;
+  background:#dc8c00;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 5px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange.focus,
+.btn-orange:active,
+.btn-orange.active,
+.btn-orange:active:hover,
+.btn-orange.active:hover,
+.btn-orange:active:focus,
+.btn-orange.active:focus,
+.btn-orange:active.focus,
+.btn-orange.active.focus{
+  color: #000;
+  box-shadow:none !important;
+}
+
+
+/*=======================================================================
+[03] HEADER
+=========================================================================*/
+.navbar-cctest {
+  background: #fff;
+}
+@media (max-width: 575px) {
+  .logo img{
+    width: 80%;
+  }
+}
+/*=======================================================================
+[04] HERO
+=========================================================================*/
+.hero {
+  height: 400px;
+  background: url(/assets/images/bg-hero.jpg) no-repeat center top;
+  background-size: cover;
+  color: #fff;
+}
+.hero-box {
+  position: relative !important;
+  height: 400px;
+}
+.hero-box b {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  padding-top: 20px;
+  background:#e039a2;
+  text-align: center;
+  border-radius: 100%;
+  text-transform: uppercase;
+}
+.hero-box b h3{
+  font-size: 2em;
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+.hero-box b h4{
+  font-size: 1.7em;
+  margin: 0;
+  line-height: 1;
+}
+.hero-text {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+.hero-text h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+@media (max-width: 575px) {
+  .hero-text h2 {
+    font-size: 1.875em;
+  }
+}
+
+/*=======================================================================
+[05] CENTRAL BLOCK
+=========================================================================*/
+.central-block {}
+.central-item h1{
+  text-align: center;
+  font-size: 2.25em;
+  font-weight: 600;
+}
+.central-item h1 img {
+  margin-right: 10px;
+}
+.central-item h1 span{
+  white-space: nowrap;
+}
+
+@media (max-width: 575px) {
+  .central-item h1{
+    font-size: 1.875em;
+  }
+  .central-item h1 img {
+    margin: 0 auto 5px;
+    display: block;
+  }
+}
